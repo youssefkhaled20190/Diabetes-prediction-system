@@ -1,0 +1,45 @@
+/* start form */
+@media only screen and (max-width: 700px) {
+
+}
+
+.container .signUp u{
+
+  color:#4A5AF4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  max-width: 500px;
+  margin: auto;
+  width: 50%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+::placeholder{
+  color:#6473E4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 250px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color:lightblue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
