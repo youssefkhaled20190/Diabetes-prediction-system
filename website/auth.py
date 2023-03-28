@@ -18,7 +18,7 @@ def _signup():
         PhoneNumber = request.form.get('phonenumber')
         Gender = request.form.get('gender')
 
-    return render_template("signup.html")
+    return render_template("signup.html", custom_css="signup")
 
 
 @Auth.route("/logout")
@@ -28,4 +28,4 @@ def _logout():
 
 @Auth.route("/login", methods=['GET', 'POST'])
 def _login():
-    return render_template("login.html")
+    return render_template("login.html",  custom_css="login")

@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %}
 
-<head>
-  <title>Login</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/login.css') }}">
-  <!-- <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> -->
-</head>
+
+{% block content %}
+
+
+
+
 <!-- start login-->
 <div class="containerLogin">
   <div class="Login"><u>Login</u></div><br>
@@ -27,7 +26,6 @@
 </div>
 <!-- end login-->
 
-<body>
-</body>
 
-</html>
+
+{% endblock %}

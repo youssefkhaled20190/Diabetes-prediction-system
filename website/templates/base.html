@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>home</title>
-  <link rel="stylesheet"  href="{{url_for('static' ,filename='css/main.css')}}"/>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
+
+  {% if custom_css%}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/' +custom_css+'.css')}}">
+  {% endif %}
+
+  <title>{% block title %}Home{% endblock %}</title>
+
 </head>
+
 <body>
   <header class="site-header">
     <div class="logo">My Website</div>
@@ -17,9 +25,13 @@
     </nav>
   </header>
   <main>
-    <h1>Welcome to my website!</h1>
-    <p>Here's some content...</p>
+
+    {% block content %}
+    {% endblock %}
+
   </main>
+
+
   <footer class="site-footer">
     <div class="social-icons">
       <a href="#"><i class="fa fa-facebook"></i></a>
@@ -30,7 +42,7 @@
       &copy; 2023 My Website. All rights reserved.
     </div>
   </footer>
-{% block body %}
-{% endblock %}
+
 </body>
+
 </html>
