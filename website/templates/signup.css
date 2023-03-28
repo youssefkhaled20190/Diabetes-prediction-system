@@ -1,19 +1,18 @@
 /* start form */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {}
 
-}
+.container .signUp u {
 
-.container .signUp u{
-
-  color:#4A5AF4;
+  color: #4A5AF4;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
   max-width: 500px;
   margin: auto;
   width: 50%;
-   margin: 0 auto;
-   text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 label {
@@ -22,8 +21,9 @@ label {
   text-align: right;
   margin-right: 10px;
 }
-::placeholder{
-  color:#6473E4;
+
+::placeholder {
+  color: #6473E4;
 }
 
 input[type="text"],
@@ -36,7 +36,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  background-color:lightblue;
+  background-color: lightblue;
   color: white;
   padding: 10px 20px;
   border: none;
