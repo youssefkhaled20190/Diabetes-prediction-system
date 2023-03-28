@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="login.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-        </head>
+
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/login.css') }}">
+  <!-- <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+</head>
 <!-- start login-->
-        <div class="containerLogin">
-          <div class="Login"><u>Login</u></div><br>
-               <form method="POST">
-                      <input type="email" name="email" placeholder="enter Email"required><br>
-                      <br>
-                      <input type="password" name="password" placeholder="enter password" required><br>
-                      <br>
+<div class="containerLogin">
+  <div class="Login"><u>Login</u></div><br>
+  <form method="POST">
+    <input type="email" id="email" name="email" placeholder="enter Email" required><br>
+    <br>
+    <input type="password" id="password" name="password" placeholder="enter password" required><br>
+    <br>
 
-                      
-                      <br>
-                      <input type="submit" class="signin" value="Login">
-                      <br>
-                      <br>
-                      <a href="##">Forget Password? </a> 
 
-               </form>
-      </div>
-      <!-- end login-->
-        <body>
-        </body>
-        </html>
+    <br>
+    <input type="submit" class="signin" value="Login">
+    <br>
+    <br>
+    <a href="##">Forget Password? </a>
+
+  </form>
+</div>
+<!-- end login-->
+
+<body>
+</body>
+
+</html>
