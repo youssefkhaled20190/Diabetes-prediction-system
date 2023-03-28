@@ -1,0 +1,46 @@
+.site-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 24px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  opacity: 0.7;
+}
