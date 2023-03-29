@@ -6,4 +6,4 @@ Home = Blueprint("home", __name__)
 
 @Home.route("/")
 def _home():
-    return render_template("base.html")
+    return render_template("home.html", custom_css="home")
