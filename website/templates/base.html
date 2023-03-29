@@ -17,8 +17,9 @@
   <header class="site-header">
     <div class="logo">
       <span class="Header-icon">
-         <h2 style="color:aquamarine;">Diabetes <span style="color:rgb(0, 0, 0)"> Prediction </h2></span>
-  </div>
+        <h2 style="color:aquamarine;">Diabetes <span style="color:rgb(0, 0, 0)"> Prediction </h2>
+      </span>
+    </div>
     <nav class="site-nav">
       <ul>
         <li><a href="#">Home</a></li>
@@ -28,6 +29,26 @@
       </ul>
     </nav>
   </header>
+  {% with messages = get_flashed_messages(with_categories=true) %} {% if
+  messages %} {% for category, message in messages %} {% if category ==
+  'error' %}
+  <div class="alert alert-danger alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% else %}
+  <div class="alert alert-success alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button type="button" class="close" data-dismiss="alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %} {% endfor %} {% endif %} {% endwith %}
+
+
+
   <main>
 
     {% block content %}
