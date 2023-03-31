@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
+  <script src="https://kit.fontawesome.com/51a791caa3.js" crossorigin="anonymous"></script>
 
   {% if custom_css%}
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/' +custom_css+'.css')}}">
@@ -16,10 +17,18 @@
 <body>
   <header class="site-header">
     <div class="logo">
-      <span class="Header-icon">
-        <h2 style="color:aquamarine;">Diabetes <span style="color:rgb(0, 0, 0)"> Prediction </h2>
-      </span>
+      <img src="static/Logo-01.png">
     </div>
+
+
+    <div class="icons">
+      <i class="fa-brands fa-facebook fa-xl" style="color: #4d63fb;"></i>
+
+      <i class="fa-brands fa-twitter fa-xl" style="color: #4d63fb;"></i>
+
+      <i class="fa-brands fa-instagram fa-xl" style="color: #4d63fb;"></i>
+    </div>
+    
     <nav class="site-nav">
       <ul>
 
@@ -31,7 +40,6 @@
         <li><a href="/dietandprecautions">Diet</a></li>
         <li><a href="/logout">Logout</a></li>
         {% else %}
-        <li><a href="/">Home</a></li>
         <li><a href="/signup">Sign Up</a></li>
         <li><a href="/login">Login</a></li>
         {% endif %}
