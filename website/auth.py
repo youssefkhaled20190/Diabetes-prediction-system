@@ -38,11 +38,10 @@ def _signup():
                             city=City, country=Country, phone_number=PhoneNumber, gender=Gender)
             db.session.add(New_User)
             db.session.commit()
-
             login_user(New_User, remember=True)
             db.session.close_all()
             flash('account created successfully', category='success')
-            return redirect(url_for('auth._login'))
+            return redirect(url_for('home._home'))
 
     return render_template("signup.html", custom_css="signup", user=current_user)
 

@@ -12,10 +12,10 @@
   <form method="POST">
     <input type="email" id="email" name="email" placeholder="enter Email" required><br>
     <br>
-    <input type="password" id="password" name="password"  required/>
+    <input type="password" id="password" name="password" placeholder="enter password" required />
     <br>
     <br>
-    <input type="checkbox" id="showPassword"/>
+    <input type="checkbox" id="showPassword" />
     <label for="showPassword">Show password</label>
     <br>
     <br>
@@ -28,6 +28,6 @@
 </div>
 <!-- end login-->
 
-<script src= "{{url_for('static' ,filename='js/main.js')}}"></script>
+<script src="{{url_for('static' ,filename='js/main.js')}}"></script>
 
 {% endblock %}
