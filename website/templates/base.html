@@ -6,6 +6,9 @@
   <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
   <script src="https://kit.fontawesome.com/51a791caa3.js" crossorigin="anonymous"></script>
 
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   {% if custom_css%}
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/' +custom_css+'.css')}}">
   {% endif %}
@@ -32,7 +35,7 @@
     <nav class="site-nav">
       <ul>
 
-        <li><a href="/">Home</a></li>
+        <li><a href="/" class="active" >Home</a></li>
 
         {% if user.is_authenticated %}
         <li><a href="/form">Check Diabetes</a></li>
@@ -42,6 +45,8 @@
         {% else %}
         <li><a href="/signup">Sign Up</a></li>
         <li><a href="/login">Login</a></li>
+        
+        
         {% endif %}
 
 
@@ -76,5 +81,5 @@
   </main>
 
 </body>
-
+  <script src= "{{url_for('static' ,filename='js/main.js')}}"></script>
 </html>
