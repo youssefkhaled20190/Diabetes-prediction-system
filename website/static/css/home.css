@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+     height: fit-content;
+}
+
+#D{
+    font-size: 58px;
+}
+#ourgoal{
+    font-size: 30px;
+    margin-top: 11px;
+}
+.textbox{
+
+    color: aliceblue;
+    padding: 99px 240px 128px 92px;
+    float: left;
+}
+
+button{
+    width: 188px;
+    color: black;
+    font-size: 21px;
+    padding: 12px 0;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 23px;
+    margin-top: 30px;
+}
+#picbox{
+  
+}
+img.homepic {
+    height: 553px;
+}
+.line{
+    position: absolute;
+    align-items: center;
+    top: 487px;
+    left: 437px;
+}
+@media screen and (max-width:600px){
+    
+}

@@ -1,7 +1,23 @@
 {% extends "base.html"%} {% block title%} home {% endblock %}
 
 {% block content%}
-<h1> This is home bage </h1>
+<!--Start home page -->
+<div class="content">
+    <!--this div for identify -->
+   <div class="textbox" style="background-color: #4e63fc;">
+    <h1 id="D">Diabetes <br> is our priority</h1>
+    <p id="ourgoal">Our goal is to reach a fully aware <br> community with the diabetes<br> and how to deal with it. </p>
+    <button type="button">Check NOW</button>
+     </div>
+     <!--photo-->
+   <div id="picbox">
+    <img src="static/Home-01.jpg" alt="" class="homepic" >
+   </div>
+  
+</div>
+<!--the white line-->
+<div class="line" style="width: 40% ; height: 5px; background-color: white; "> 
+</div>
 
 <!-- type ur code in this block -->
 {% endblock %}
