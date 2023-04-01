@@ -2,47 +2,61 @@
 @media only screen and (max-width: 700px) {}
 
 .container .signUp u {
-  color:#4A5AF4;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
+  color:#4D63FB;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .container {
   max-width: 500px;
-  margin: auto;
+  margin: 50px auto;
   width: 50%;
-   margin: 0 auto;
+  height: 50%;
+  padding: 10px 10px 20px 10px;
    text-align: center;
-justify-content: center;
 }
 
-label {
-  display: inline-block;
-  width: 100px;
-  text-align: right;
-  margin-right: 10px;
-}
 
 ::placeholder {
-  color: #6473E4;
+  color:#4d63fb;
+  font-family: Arial, Helvetica, sans-serif ;
+
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  width: 250px;
+  background-color: #dedede;
+  width: 255px;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 7px;
   border: 1px solid #ccc;
-  height:15px;
+  height:20px;
     font-size:14pt;
+    box-shadow: 1px 1px #dedede;
+}
+
+ .custom-select{
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: #4D63FB;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 1px 1px #ccc;
 }
 
 input[type="submit"] {
-  background-color: lightblue;
+  background-color:#4D63FB;
   color: white;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  font-size: 20px;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
