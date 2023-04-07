@@ -1,1 +1,55 @@
-/* type the code of css here */
+*{
+  margin: 0;
+  padding: 0;
+}
+.predictionform{
+  margin-top: 50px;
+  margin-left: 621px;
+}
+
+#Questions {
+ 
+}
+.headline {
+  margin-bottom: 15px;
+  color: #4e63fc;
+  text-decoration: underline;
+}
+
+input[type="number"]{
+  border: 4px solid #ccc;
+  border-radius: 9px;
+  box-sizing: border-box;
+  width: 35%;
+  padding: 4px 11px;
+  margin: 8px 1px;
+  background-color: #dedede;
+  
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+::placeholder{
+  color: #636efe;
+}
+button {
+  padding: 12px 30px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #636efe;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px #999;
+}
+
+button:hover {background-color: #636efe}
+
+button:active {
+  background-color: #636efe;
+  box-shadow: 0 2px #b3b1b1;
+  transform: translateY(4px);
+}
