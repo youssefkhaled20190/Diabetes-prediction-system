@@ -4,7 +4,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .site-header {
   background-color: white;
   margin: 0%;
@@ -78,22 +77,34 @@ font-weight: bolder;
   }
 
 
-.site-footer {
-  background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
 
-.social-icons {
-  font-size: 24px;
-}
-
-.social-icons a {
-  color: white;
-  margin: 0 10px;
-}
-
-.social-icons a:hover {
-  opacity: 0.7;
-}
+  .site-footer {
+    padding-bottom: 100px;
+    margin-top: auto;
+    height: 100px;
+    background-color:white;
+    position: relative;
+    bottom: 0;
+    color: white;
+  }
+  .site-footer img{
+    padding-top: 100px;
+   width: 965px;
+    height: 167px;
+  float: left;
+  margin-top: auto;
+  margin-bottom: 0px;
+  }
+  
+  .site-footer .help{
+    padding-top: 100px;
+  color:#4D63FB;
+  float: right;
+  position: relative;
+  left: -60px;
+  bottom: -60px;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  }
