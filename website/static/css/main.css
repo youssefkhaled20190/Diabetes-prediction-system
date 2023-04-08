@@ -78,8 +78,10 @@ font-weight: bolder;
 
   
   .site-footer {
+    clear: both;
+    height: 200px;
+    margin-top: 23px;
     padding-bottom: 100px;
-    margin-top: auto;
     height: 100px;
     background-color:white;
     position: relative;
@@ -108,24 +110,3 @@ font-weight: bolder;
   font-weight: bold;
   }
 
-
-  /* start footer */
-/*
-.footer{
-  padding-bottom: 100px;
-  margin-top: auto;
-  height: 100px;
-  background-color:rgb(179, 26, 26);
-  position:static;
-  bottom: 0;
-  color: white;
-}
-
-.footer a{
-  color: white;
-  font-size: 30px;
-}
-.footer a:hover{color: #0040ff}
-
-/* end footer */
-/*
