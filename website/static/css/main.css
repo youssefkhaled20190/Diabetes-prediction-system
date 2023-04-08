@@ -76,21 +76,20 @@ font-weight: bolder;
     margin: 10px 0;
   }
 
-
-
+  
   .site-footer {
     padding-bottom: 100px;
     margin-top: auto;
     height: 100px;
     background-color:white;
     position: relative;
-    bottom: 0;
+    bottom: 100%;
     color: white;
   }
   .site-footer img{
     padding-top: 100px;
-   width: 965px;
-    height: 167px;
+   width: 960px;
+    height: 100px;
   float: left;
   margin-top: auto;
   margin-bottom: 0px;
@@ -108,3 +107,25 @@ font-weight: bolder;
   font-size: 25px;
   font-weight: bold;
   }
+
+
+  /* start footer */
+/*
+.footer{
+  padding-bottom: 100px;
+  margin-top: auto;
+  height: 100px;
+  background-color:rgb(179, 26, 26);
+  position:static;
+  bottom: 0;
+  color: white;
+}
+
+.footer a{
+  color: white;
+  font-size: 30px;
+}
+.footer a:hover{color: #0040ff}
+
+/* end footer */
+/*
