@@ -1,14 +1,20 @@
 
 .choices{
-  width: 1408px;
-  height: 828px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
 }
+
 /* title*/
-h1{
+
+
+.title{
     text-align: center;
     
 }
-h1 u{
+.title u{
   color: #4D63FB;
   font-family: 'Lexend Deca', sans-serif; 
   font-style: italic;
@@ -16,16 +22,24 @@ h1 u{
   font-size: 45px;
 
 }
+
+
+.child{
+flex-shrink: 1;
+
+}
 /* end title*/
 
+
 /* first choice*/
+
 .breakfast{
   float: right;
 width: 700px;
 height: 150px;
 padding-top: 70px;
-margin-top: 70px;
-margin-right: -7%;
+margin: auto;
+margin-right: 0;
 }
 .breakfast #breakfast-content {
   float: left;
@@ -59,8 +73,8 @@ margin-right: -7%;
 width: 700px;
 height: 150px;
 padding-top: 70px;
-margin-top: 70px;
-margin-left: 5%;
+margin: auto;
+margin-left: 0;
 }
 .lunch #lunch-content {
   margin-right: -155px;
@@ -97,12 +111,11 @@ margin-left: 5%;
 /* third choice*/
 
 .dinner{
-  float: right;
+float: right;
 width: 700px;
 height: 150px;
-padding-top: 70px;
-margin-top: 290px;
-margin-right: -51%;
+margin: auto;
+margin-right: 0;
 }
 .dinner #dinner-content {
   float: left;
@@ -130,15 +143,14 @@ margin-right: -51%;
 /*end third choice*/
 
 /*forth choice*/
-
 .recommendations{
   float: left;
 width: 700px;
 height: 150px;
 padding-top: 70px;
-margin-top: 367px;
-margin-left: -50%;
-margin-right: -15%;
+margin: auto;
+margin: auto;
+margin-left: 0;
 }
 .recommendations #rec-content {
   margin-right: -155px;
@@ -169,3 +181,4 @@ margin-right: -15%;
   border-radius: 100%;
 }
 /*end forth choice*/
+/*
