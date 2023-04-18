@@ -91,3 +91,28 @@ if (LcloseButton) {
 }
 }
 }
+
+//pre
+
+function togglepre(){
+  var body = document.getElementsByTagName('body')[0];
+  var Poverlay = document.createElement('div');
+  var Pcard = document.getElementById('pre-Card');
+  if (Pcard) {
+    Poverlay.classList.add('Poverlay');
+    body.appendChild(Poverlay);
+    Poverlay.appendChild(Pcard);
+    Poverlay.classList.add('active');
+    Pcard.style.display = 'block';
+    var PrecloseButton = document.getElementById('PrecloseButton');
+if (PrecloseButton) {
+  console.log('Close button found!');
+  PrecloseButton.addEventListener('click', function() {
+    Poverlay.classList.remove('active');
+    Pcard.style.display = 'none';
+  });
+} else {
+  console.error('Error: Could not find close button element with ID "closeButton".');
+}
+}
+}
