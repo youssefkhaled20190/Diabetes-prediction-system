@@ -1,42 +1,140 @@
 {% extends "base.html"%} {% block title%} Diet And Precautions {% endblock %}
 
 {%block content%}
-
-
 <h1 class="title"><u>Diet Plan</u></h1>
 <div class="choices">
 
-<!--first choice zone-->
+  <!--first choice zone-->
 
-<div class="breakfast child">
-  <p id="breakfast-content">BreakFast</p>
-  <img src="static/Diet-01.png" alt="breakfast" class="image-one" /> 
-</div>
-<!--end first choice zone-->
-<!--second choice zone-->
-<div class="lunch child">
-  <div id="lunch-content">
-    <p>Lunch</p>
+  <div class="breakfast child" id="break">
+    <button id="btn" onclick="toggleFocus()">Breakfast</button>
+
+    <div id="myCard" class="bf-card" style="display:none;">
+      <img class="BF"
+        src="https://img.freepik.com/free-photo/halthy-breakfast-food_23-2147667325.jpg?w=740&t=st=1681592884~exp=1681593484~hmac=0f8612f813d1f2cc081b9fee578f7d5acca79cf6bb2c1bd8f6909e9f5586129a"
+        alt="breakfast" style="width: 500px;border-radius:inherit; height:220px" />
+      <div class="card-body">
+        <h5 class="card-title">Avocado-Egg Toast</h5>
+        <p class="card-text">
+        <h5 class="card-title2">Ingredients:</h5>
+        <ul style="color: #4D63FB;font-size: 15px;">
+          <li> ¼ avocado</li>
+          <li> ¼ teaspoon ground pepper</li>
+          <li> ⅛ teaspoon garlic powder</li>
+          <li> 1 slice whole-wheat bread, toasted</li>
+          <li> 1 large egg, fried</li>
+          <li> 1 teaspoon Sriracha (Optional)</li>
+          <li> 1 tablespoon scallion, sliced (Optional)</li>
+        </ul>
+        <h5 class="card-title3">Directions:</h5>
+        <ol style="color: #4D63FB;font-size: 15px;">
+          <li> Combine avocado, pepper and garlic powder in a small bowl and gently mash.</li>
+          <li> Top toast with the avocado mixture and fried egg. Garnish with Sriracha and scallion, if desired. </li>
+        </ol>
+        </p>
+        <br>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+    <img src="static/Diet-01.png" alt="breakfast" class="image-one" />
   </div>
-  <img src="static/Diet-02.png" alt="lunch" class="image-two" />
-</div>
-<!--end second choice zone-->
+  <!--end first choice zone-->
+  <!--second choice zone-->
+  <div class="lunch child">
+    <button id="lunch-btn" onclick="toggleLunch()">Lunch</button>
 
-<!--third choice zone-->
-<div class="dinner child">
-  <p id="dinner-content">Dinner</p>
-  <img src="static/Diet-03.png" alt="dinner" class="image-three" />
-</div>
-<!--end third choice zone-->
+    <div id="lunch-Card" class="l-card" style="display:none;">
+      <img class="lunch-img"
+        src="https://www.eatingwell.com/thmb/htVCcL__ELoXZXLsaQD2D9_PDkY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/egg-salad-english-muffin-sandwich-2000-d499b19b458748f198af5c7d52b105da.jpg"
+        alt="lunch" style="width:498px;height:165px;display: block;border-radius:inherit;object-fit: cover" />
+      <div class="lunch-body">
+        <h5 class="lunch-title">Egg Salad English-Muffin Sandwichn</h5>
+        <p class="lunch-text">
+        <h5 class="lunch-title2">Ingredients:</h5>
+        <ul style="color: #4D63FB;font-size: 15px;">
+          <li> 1 whole-wheat English muffin, split</li>
+          <li>2 medium carrots with tops</li>
+          <li> 2 large hard-boiled eggs</li>
+          <li>1 tablespoon plus 1 tsp. mayonnaise</li>
+          <li> 1 large romaine lettuce leaf, shredded</li>
+        </ul>
+        <h5 class="lunch-title3">Directions:</h5>
+        <ol style="color: #4D63FB;font-size: 15px;">
+          <li> Preheat a grill pan or skillet (not nonstick) over medium-high heat.
+            Brush cut sides of English muffin halves with oil.
+            Grill the muffins until both sides are lightly browned,
+            1 to 2 minutes per side. </li>
 
-<!--forth choice zone-->
-
-<div class="recommendations child">
-  <div id="rec-content">
-    <p>Precautions</p>
+          <li> Peel carrots, if desired; cut into sticks. Chop 1 Tbsp. of the carrot tops. </li>
+          <li>Dice hard-boiled eggs and place in a small bowl.
+            Add mayonnaise and the chopped carrot tops;
+            stir until combined.
+            Divide lettuce between the grilled muffin halves;
+            top with the egg salad. Serve the carrots on the side. </li>
+        </ol>
+        </p>
+        <br>
+        <button id="LcloseButton">Close</button>
+      </div>
+    </div>
+    <img src="static/Diet-02.png" alt="lunch" class="image-two" />
   </div>
-  <img src="static/Diet-04.png" alt="rec" class="image-four" />
+  <!--end second choice zone-->
+
+  <!--third choice zone-->
+  <div class="dinner child">
+    <button id="dinner-btn" onclick="toggleDinner()">Dinner</button>
+    <div id="Dinner-Card" class="Dcard" style="display:none;">
+      <img class="Dinner-img"
+        src="https://www.eatingwell.com/thmb/Muna7d8_zl0Z9Vt0XM9Kjy38Ops=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/5678426-7b218791c4a14499b568f11b2c6851ca.jpg"
+        alt="Dinner" style="width:498px;height:122px;display: block;border-radius:inherit;object-fit: cover" />
+      <div class="dinner-body">
+        <h5 class="dinner-title">Chicken & Spinach Skillet Pasta with Lemon & Parmesan</h5>
+        <div class="dinner-text">
+          <h5 class="dinner-title2">Ingredients:</h5>
+          <ul style="color: #4D63FB;font-size: 15px;">
+            <li>8 ounces gluten-free penne Pasta</li>
+            <li>2 tablespoons extra-virgin olive oil</li>
+            <li>1 pound boneless, skinless chicken breast,
+              trimmed and cut into bite-size pieces</li>
+            <li>½ teaspoon salt</li>
+            <li>¼ teaspoon ground pepper</li>
+            <li>4 cloves garlic, minced</li>
+            <li>½ cup dry white wine</li>
+            <li>Juice and zest of 1 lemon</li>
+            <li>10 cups chopped fresh spinach</li>
+            <li>4 tablespoons grated Parmesan cheese, divided</li>
+          </ul>
+          <h5 class="dinner-title3">Directions:</h5>
+          <ol style="color: #4D63FB;font-size: 15px">
+            <li> Cook pasta according to package directions.Drain and set aside. </li>
+            <li> Meanwhile, heat oil in a large high-sided skillet over medium-high heat.
+              Add chicken, salt and pepper;
+              cook, stirring occasionally, until just cooked through,
+              5 to 7 minutes. Add garlic and cook, stirring, until fragrant,
+              about 1 minute. Stir in wine, lemon juice and zest;
+              bring to a simmer. </li>
+            <li>Remove from heat.
+              Stir in spinach and the cooked pasta.
+              Cover and let stand until the spinach is just wilted.</li>
+          </ol>
+        </div>
+        <button id="DcloseButton">Close</button>
+      </div>
+    </div>
+    <img src="static/Diet-03.png" alt="dinner" class="image-three" />
+  </div>
+  <!--end third choice zone-->
+
+  <!--forth choice zone-->
+
+  <div class="Precautions child">
+    <div id="pre-content">
+      <p>Precautions</p>
+    </div>
+    <img src="static/Diet-04.png" alt="pre" class="image-four" />
+  </div>
+  <!--end forth choice zone-->
 </div>
-<!--end forth choice zone-->
-</div>
+<script src="{{url_for('static' ,filename='js/diet.js')}}"></script>
 {% endblock %}

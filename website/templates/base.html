@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="icon" href="static/Logo_N-01.png" sizes="16x16 32x32">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
   <script src="https://kit.fontawesome.com/51a791caa3.js" crossorigin="anonymous"></script>
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -27,12 +28,11 @@
 </head>
 
 <body>
-  <header class="site-header">
+  <div class="container">
+  <header class=" child site-header">
     <div class="logo">
       <img src="static/Logo-01.png">
     </div>
-
-
     <div class="icons">
       <i class="fa-brands fa-facebook fa-xl" style="color: #4d63fb;"></i>
 
@@ -41,7 +41,8 @@
       <i class="fa-brands fa-instagram fa-xl" style="color: #4d63fb;"></i>
     </div>
 
-    <nav class="site-nav">
+    
+    <nav class=" child site-nav">
       <ul>
 
         <li><a href="/" class="active">Home</a></li>
@@ -60,6 +61,7 @@
 
 
       </ul>
+      
     </nav>
   </header>
   {% with messages = get_flashed_messages(with_categories=true) %} {% if
@@ -82,7 +84,7 @@
 
 
 
-  <main> 
+  <main class=" child site-main"> 
 
     {% block content %}
     {% endblock %}
@@ -95,7 +97,7 @@
 
 
 
-  <footer class="site-footer">
+  <footer class=" child site-footer">
     <img src="static/1Artboard 1.png">
     <div class="help">
       <i class="fa-sharp fa-solid fa-circle-notch fa-xl " style="color: #4d63fb;"></i>
@@ -103,6 +105,7 @@
           </div>
 </footer>
 
+</div>
 
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
