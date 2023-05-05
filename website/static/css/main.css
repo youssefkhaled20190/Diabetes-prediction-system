@@ -117,7 +117,7 @@ font-weight: bolder;
   .site-main{
     grid-area: main;
   }
-
+/*
   .site-footer{
     grid-area: footer;
     width: auto;
@@ -126,7 +126,7 @@ font-weight: bolder;
     margin-top:0%;
   }
   .site-footer img{
-    padding-top: 100px;
+    padding-top: 3px;
    width:auto;
     height: auto;
   float: left;
@@ -134,7 +134,7 @@ font-weight: bolder;
   margin-bottom: 0px;
   }
   .site-footer .help{
-    padding-top: 100px;
+    padding-top: 3px;
     color:#4D63FB;
     float: right;
     position: relative;
@@ -146,3 +146,4 @@ font-weight: bolder;
     font-weight: bold;
   }
   
+*/
