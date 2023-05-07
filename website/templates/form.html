@@ -6,26 +6,27 @@
   <svg height="100" width="100"> 
       <circle cx="50 " cy="50" r="40" stroke="black " stroke-width="3" fill="white"/>
   
-  
+ 
   </svg>
     <div class="predictionform">
   <div class="headline"> 
       <h1>Predict Diabetes</h1>
+      {{text}}
   </div>
   <form method="POST">
-      <input type="number"  name="Pregnancies" placeholder="Number of Pregnancies">
+      <input type="number"  name="Pregnancies" step="any" placeholder="Number of Pregnancies">
       <br>
-      <input type="number" name="Glucose" placeholder="Glucose(mg/dl)">
+      <input type="number" name="Glucose" step="any" placeholder="Glucose(mg/dl)">
       <br>
-      <input type="number" name="Blood-pressure"  placeholder="Blood pressure(mmHg)">
+      <input type="number" name="Blood-pressure" step="any" placeholder="Blood pressure(mmHg)">
       <br>
-      <input type="number" name="Skin-Thickness"  placeholder="Skin Thickness(mm)">
+      <input type="number" name="Skin-Thickness" step="any" placeholder="Skin Thickness(mm)">
       <br>
-      <input type="number" name="Insulin-Level"  placeholder="Insulin Level (IU/ml)">
+      <input type="number" name="Insulin-Level" step="any" placeholder="Insulin Level (IU/ml)">
       <br>
-      <input type="number" name="bmi"  placeholder="Body Mass Index (kg/m^2)">
+      <input type="number" name="bmi" step="any" placeholder="Body Mass Index (kg/m^2)">
       <br>
-      <input type="number" name="diabetes-function"  step="0.01" placeholder="Diabetes Pedigree Function">
+      <input type="number" name="diabetes-function"  step="any" placeholder="Diabetes Pedigree Function">
       <br>
       <input type="number" name="age" placeholder="Age">
       <br>
