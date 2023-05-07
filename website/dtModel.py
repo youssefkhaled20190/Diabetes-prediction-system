@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 # read csv file
 
-diabetes_data = pd.read_csv(r'C:\Users\HP\Documents\Diabetes-prediction-system\Diabetes-prediction-system\Diabetes\diabetes_new.csv')
+diabetes_data = pd.read_csv(r'C:\Users\SOURCE\Downloads\diabetes_new.csv')
 # show first 20 row
 diabetes_data.head(20)
 

@@ -45,6 +45,7 @@
       <ul>
 
         <li><a href="/" class="active">Home</a></li>
+        
 
         {% if user.is_authenticated %}
         <li><a href="/form">Check Diabetes</a></li>
@@ -52,6 +53,7 @@
         <li><a href="/dietandprecautions">Diet</a></li>
         <li><a href="/logout">Logout</a></li>
         {% else %}
+        <li><a href="/helpuser">HELP</a></li>
         <li><a href="/signup">Sign Up</a></li>
         <li><a href="/login">Login</a></li>
 
