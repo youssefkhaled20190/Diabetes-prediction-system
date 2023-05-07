@@ -1,18 +1,33 @@
 
-body{
-
-  width:100%; 
-  height: 100%;
-  min-width: 1000px;
-}
-
 *{
+  box-sizing: border-box;
   margin: 0%;
   padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.container{
+display: grid;
+
+grid-template-areas:
+"header header header"
+"main main main"
+"footer footer footer";
+
+grid-template-columns: 2fr 4fr 1fr;
+grid-template-rows: auto 1fr auto;
+grid-gap: 10px;
+
+height: 100vh;
+
+}
+/*
+@media (min-width: 700px) {
+  .container{ grid-template-columns: repeat(2, 1fr); }
+}
+*/
 .site-header {
+  grid-area: header;
   background-color:white;
   margin: 0%;
   padding: 0%;
@@ -22,6 +37,7 @@ body{
   top: 0; 
   left: 0;
   z-index: 1;
+  overflow: hidden;
 }
 
 
@@ -43,6 +59,7 @@ padding: 25px;
 }
 
 .site-nav {
+  grid-area: nav;
 overflow: hidden;
   }
 
@@ -51,8 +68,6 @@ overflow: hidden;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 
@@ -77,41 +92,58 @@ font-weight: bolder;
 }
 
 @media only screen and (max-width: 600px) {
+
   .site-nav ul {
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    background-color: #4D63FB;
   }
-  }
-  .site-nav li {
-    margin: 10px 0;
+  
+  .site-header{
+    position: fixed;
   }
 
-  .site-footer {
+  .site-header .logo img{
+    width: 200px;
+    height: 100px;
+    margin-left: -24%;
+    float: left;
+    padding-left: 30%;
+  }
+
+  
+
+
+}
+  .site-main{
+    grid-area: main;
+  }
+/*
+  .site-footer{
+    grid-area: footer;
+    width: auto;
+    height: auto;
     clear: both;
     margin-top:0%;
-    padding-bottom: 200px;
-    position: relative;
-    bottom: 100%;
   }
   .site-footer img{
-    padding-top: 100px;
-   width: 960px;
-    height: 100px;
+    padding-top: 3px;
+   width:auto;
+    height: auto;
   float: left;
   margin-top: auto;
   margin-bottom: 0px;
   }
-  
   .site-footer .help{
-    padding-top: 100px;
-  color:#4D63FB;
-  float: right;
-  position: relative;
-  left: -60px;
-  bottom: -60px;
-  font-family: Arial, Helvetica, sans-serif ;
-  font-style: italic;
-  font-size: 25px;
-  font-weight: bold;
+    padding-top: 3px;
+    color:#4D63FB;
+    float: right;
+    position: relative;
+    left: -60px;
+    bottom: -60px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
   }
-
+  
+*/
