@@ -1,13 +1,9 @@
 /* start form */
-@media only screen and (max-width: 700px) {
-
-}
-
 .containerLogin .Login u{
   color:#4D63FB;
   font-family: Arial, Helvetica, sans-serif ;
   font-style: italic;
-  font-size: 45px;
+  font-size: 65px;
   font-weight: bold;
 }
 .containerLogin{
@@ -17,6 +13,13 @@
   height: 50%;
   padding: 10px 10px 20px 10px;
    text-align: center;
+
+}
+main{
+
+  background-image:url('..//background-circle.png');
+  background-position: center;
+  background-size: cover;
 
 }
 
@@ -34,7 +37,7 @@ input[type="text"] {
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  height:25px;
+  height:44px;
     font-size:14pt;
   }
 
@@ -48,4 +51,41 @@ input[type="submit"] {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+
+/* Mobile styles */
+@media (max-width: 992px) {
+  main{
+    background-image:url('..//background-circle.png');
+    background-size:inherit;
+  }
+  .containerLogin {
+    padding: 20px;
+    height:852px
+  }
+  .containerLogin.Login u{
+    width: 100%;
+  }
+  .Login {
+    font-size: 24px;
+    padding-top: 10%;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"],
+   input[type="email"],
+    input[type="password"]{
+      background-color: #dedede;
+      width: 195px;
+      padding: 5px;
+      border-radius: 7px;
+      border: 1px solid #ccc;
+      height:20px;
+        font-size:14pt;
+        box-shadow: 1px 1px #dedede;
+}
 }

@@ -43,7 +43,7 @@ margin-right: 0;
   float: left;
   text-align: start;
   margin-right: -160px;
-  margin-left: 4%;
+  margin-left: -15%;
   margin-top: 1%;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
@@ -167,9 +167,9 @@ background-color: beige;
   float: left;
   width: 812px;
   height: 214px;
-  margin-right: 299px;
-  margin-left: -72px;
 margin-top: -180px;
+margin-left: -406px;
+margin-right: 306px;
 }
 
 #lunch-btn{
@@ -278,12 +278,13 @@ height: 239px;
 margin: auto;
 margin-right: 0;
 margin-bottom: 99px;
+margin-top: -50px;
 }
 #dinner-btn{
   float: left;
   text-align: start;
   margin-right: -160px;
-  margin-left: 4%;
+  margin-left: -13%;
   margin-top: 1%;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
@@ -377,8 +378,8 @@ background-color: beige;
 width: 812px;
 height: 250px;
 margin-top: -253px;
-margin-right: 299px;
-margin-left: -72px;
+margin-left: -406px;
+margin-right: 306px;
 
 }
 
