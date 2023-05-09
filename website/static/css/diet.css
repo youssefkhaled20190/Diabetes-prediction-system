@@ -1,12 +1,14 @@
+body{
 
+  background-image:url('..//background-circle.png');
+  background-repeat: repeat;
+  object-fit: cover;
+}
 .choices{
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  background-image:url('..//background-circle.png');
-  background-repeat: repeat;
-  object-fit: cover;
   margin-top: 2%;
   padding-top: 6%;
 }
