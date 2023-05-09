@@ -24,7 +24,7 @@ DiabetesPedigreeMIN =  0.078043795
 DiabetesPedigreeMAX =  2.301594189
 
 #load the model.pkl
-model=pickle.load(open(r'C:\Users\HP\Videos\Diabetes-prediction-system\Model.pkl','rb'))
+model=pickle.load(open(r'F:\FCIH\gp_project\Diabetes-prediction-system-\Model.pkl','rb'))
 #---------------end-----------------
 
 @Form.route("/form",methods=['GET',"POST"])
@@ -110,7 +110,6 @@ def _form():
         return render_template("result.html"  , user=current_user , msg = "Negative" , custom_css="result" , res=0)
       elif prediction[0]==1:
         return render_template("result.html"  , user=current_user , msg = "positive" , custom_css="result" , res=1)
-
       
     
     
