@@ -107,9 +107,11 @@ def _form():
       print(prediction)
     
       if prediction[0]==0:
-        return redirect(url_for('dietandprecautions._DietAndPrecuations'))
+        return render_template("result.html"  , user=current_user , msg = "Negative" , custom_css="result" , res=0)
+        # return redirect(url_for('dietandprecautions._DietAndPrecuations'))
       elif prediction[0]==1:
-        return redirect(url_for('doctors._Doctors'))
+        return render_template("result.html"  , user=current_user , msg = "positive" , custom_css="result" , res=1)
+        # return redirect(url_for('doctors._Doctors'))
 
       
     

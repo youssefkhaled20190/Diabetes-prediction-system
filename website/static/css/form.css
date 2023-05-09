@@ -6,10 +6,10 @@
   margin-top: 50px;
   margin-left: 621px;
 }
-
+/* 
 #Questions {
  
-}
+} */
 .headline {
   margin-bottom: 15px;
   color: #4e63fc;
@@ -53,3 +53,4 @@ button:active {
   box-shadow: 0 2px #b3b1b1;
   transform: translateY(4px);
 }
+
