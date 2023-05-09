@@ -41,7 +41,7 @@ def _signup():
             login_user(New_User, remember=True)
             db.session.close_all()
             flash('account created successfully', category='success')
-            return redirect(url_for('home._home'))
+            return redirect(url_for('auth._login'))
 
     return render_template("signup.html", custom_css="signup", user=current_user)
 

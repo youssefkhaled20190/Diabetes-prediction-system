@@ -1,0 +1,38 @@
+
+/* body{
+    margin: auto;
+    padding: auto;
+} */
+.parent{
+    height:auto;
+    width: auto;
+    margin: 40px ;
+    padding: auto;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-area:1/4;
+}
+
+.parent .card{
+    background-color: rgb(237, 235, 232);
+    margin: 20px;;
+    padding:20px;
+}
+
+.parent .card .img{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.parent .card .content .description{
+    text-align: center;
+    margin: 8px;
+    padding: 8px;
+    font-size: 15px;
+}

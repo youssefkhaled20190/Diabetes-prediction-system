@@ -18,12 +18,14 @@ def create_app():
     from .diabetesform import Form
     from .dietandprecautions import DietAndPrecuations
     from .doctors import Doctors
+    from .help import HelpUser
 
     app.register_blueprint(Home, url_prefix='/')
     app.register_blueprint(Auth, url_prefix='/')
     app.register_blueprint(Form, url_prefix='/')
     app.register_blueprint(DietAndPrecuations, url_prefix='/')
     app.register_blueprint(Doctors, url_prefix='/')
+    app.register_blueprint(HelpUser, url_prefix='/')
 
     from .models import User, Patient, Doctor
 
