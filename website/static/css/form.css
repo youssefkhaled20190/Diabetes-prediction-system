@@ -3,7 +3,7 @@
   padding: 0;
 }
 .predictionform{
-  margin-top: 50px;
+  margin-top: 17px;
   margin-left: 621px;
 }
 
@@ -53,3 +53,12 @@ button:active {
   box-shadow: 0 2px #b3b1b1;
   transform: translateY(4px);
 }
+#full{
+ 
+    background-image: url("..//background-circle.png");
+  
+    height: 100%;
+    
+}
+
+  

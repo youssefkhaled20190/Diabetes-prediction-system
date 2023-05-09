@@ -2,35 +2,49 @@
 
 {% block content%}
 
-<div class="circle ">
-  <svg height="100" width="100"> 
-      <circle cx="50 " cy="50" r="40" stroke="black " stroke-width="3" fill="white"/>
+<div id="full">
   
- 
-  </svg>
     <div class="predictionform">
   <div class="headline"> 
       <h1>Predict Diabetes</h1>
       {{text}}
   </div>
   <form method="POST">
-      <input type="number"  name="Pregnancies" step="any" placeholder="Number of Pregnancies">
+    <label >  Number of Pregnancies</label>
+    <br>
+      <input type="number"  name="Pregnancies" step="any" >
       <br>
-      <input type="number" name="Glucose" step="any" placeholder="Glucose(mg/dl)">
+      <label >Glucose(mg/dl)</label>
       <br>
-      <input type="number" name="Blood-pressure" step="any" placeholder="Blood pressure(mmHg)">
+      <input type="number" name="Glucose" step="any" >
       <br>
-      <input type="number" name="Skin-Thickness" step="any" placeholder="Skin Thickness(mm)">
+      <label >Blood pressure(mmHg)</label>
       <br>
-      <input type="number" name="Insulin-Level" step="any" placeholder="Insulin Level (IU/ml)">
+      <input type="number" name="Blood-pressure" step="any" >
       <br>
-      <input type="number" name="bmi" step="any" placeholder="Body Mass Index (kg/m^2)">
+      <label >Skin Thickness(mm)</label>
       <br>
-      <input type="number" name="diabetes-function"  step="any" placeholder="Diabetes Pedigree Function">
+      <input type="number" name="Skin-Thickness" step="any" >
       <br>
-      <input type="number" name="age" placeholder="Age">
+      <label >Insulin Level (IU/ml)</label>
       <br>
+      <input type="number" name="Insulin-Level" step="any" >
+      <br>
+      <label >Body Mass Index (kg/m^2)</label>
+      <br>
+      <input type="number" name="bmi" step="any" >
+      <br>
+      <label >Diabetes Pedigree Function</label>
+      <br>
+      <input type="number" name="diabetes-function"  step="any">
+      <br>
+      <label >Age"</label>
+      <br>
+      <input type="number" name="age" >
+      <br>
+      
       <button type="submit" name="predict">PREDICT</button>
 
   </form>
+</div>
 {% endblock %}
