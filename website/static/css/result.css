@@ -66,6 +66,9 @@ p{
     gap: 20px;
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
 /* .card .buttons .b2{
     display: flex;
     gap: 20px;

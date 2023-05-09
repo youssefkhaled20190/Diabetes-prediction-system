@@ -14,9 +14,12 @@
         {% endif %}
     </div>
     <div class="buttons">
-        <button class="b1">Home</button>
-        <button class="b1">Doctors</button>
-        <button class="b1">Diet</button>
+        <a href="/"><button class="b1">Home</button></a>
+        {% if res ==1%}
+        <a href="/doctors"><button class="b1">Doctors</button></a>
+        <a href="/dietandprecautions">   <button class="b1">Diet</button> </a>
+        {% endif %}
+      
 
     </div>
 </div>
