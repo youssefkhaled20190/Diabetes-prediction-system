@@ -13,7 +13,7 @@
       <h1>Predict Diabetes</h1>
       {{text}}
   </div>
-  <form method="POST">
+  <form method="POST" id="formid">
       <input type="number"  name="Pregnancies" step="any" placeholder="Number of Pregnancies">
       <br>
       <input type="number" name="Glucose" step="any" placeholder="Glucose(mg/dl)">
@@ -31,6 +31,6 @@
       <input type="number" name="age" placeholder="Age">
       <br>
       <button type="submit" name="predict">PREDICT</button>
-
   </form>
 {% endblock %}
+
