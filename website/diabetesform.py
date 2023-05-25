@@ -24,7 +24,7 @@ DiabetesPedigreeMIN =  0.078043795
 DiabetesPedigreeMAX =  2.301594189
 
 #load the model.pkl
-model=pickle.load(open(r'Diabetes-prediction-system\Model.pkl','rb'))
+model=pickle.load(open(r'Model.pkl','rb'))
 #---------------end-----------------
 
 @Form.route("/form",methods=['GET',"POST"])

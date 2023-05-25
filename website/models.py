@@ -20,10 +20,10 @@ class Patient(db.Model):
     pregnancies = db.Column(db.Integer)
     glucose = db.Column(db.Integer)
     blood_pressure = db.Column(db.Integer)
-    skin_thickness = db.Column(db.Integer)
+    skin_thickness = db.Column(db.Float)
     insulin = db.Column(db.Integer)
-    BMI = db.Column(db.Integer)
-    diabetes_pedigree_function = db.Column(db.Integer)
+    BMI = db.Column(db.Float)
+    diabetes_pedigree_function = db.Column(db.Float)
     age = db.Column(db.Integer)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     diabetes_app = db.relationship('User')
@@ -35,3 +35,6 @@ class Doctor(db.Model):
     last_name = db.Column(db.String(150))
     rate = db.Column(db.Float)
     address = db.Column(db.String(2083))
+    phoneNumber=db.Column(db.String(100))
+    
+    
