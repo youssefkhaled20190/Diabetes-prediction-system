@@ -15,7 +15,7 @@
 .mySlides{
   width: 98%;
   height: 102%;
-  box-shadow: 8px 7px 10px rgb(97, 161, 182);
+  box-shadow: 8px 7px 10px #28457fa1;
    
 
 }
@@ -37,7 +37,7 @@
   left: 478px;
   font-weight: bold;
   
-  background: #89b5c66b;
+  background: #38779087;
   color: white;
   font-size: 35px;
   width: 37%;
@@ -149,10 +149,11 @@ transform: translateY(4px);
   font-weight: bold;
   font-size: 45px;
   margin-bottom: 20px;
-  color: #555b66db;
+  color: #eb2121f0;
 }
 .ourgoal p{
-  margin-left: 30px
+  margin-left: 30px;
+  color: gray;
 }
 .ourgoal-img {
   float: right;
@@ -167,7 +168,7 @@ transform: translateY(4px);
 /*Three divs */
 }
 .boxss {
-  background-color: #8fb4c645;
+  background-color: #e6eef142;
   height: 575px;
   width: 92%;
   margin-left: 64px;
@@ -211,6 +212,10 @@ img {
     margin-left: 38px;
     margin-right: 14px ;
     font-size: 18px;
+    color: gray;
+}
+.feature-txt h2 {
+  color: #eb2121f0;
 }
 .start{
   text-decoration: none;
