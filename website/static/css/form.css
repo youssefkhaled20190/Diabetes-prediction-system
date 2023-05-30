@@ -67,7 +67,9 @@ input[type="number"]{
   margin: -2px -232px 4px 74px;
   outline: none;
 }
- 
+#lastinput{
+  margin-bottom: 15px;
+}
 ::placeholder{
   color: #cecfd6;
 }
@@ -78,7 +80,7 @@ button {
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #636efe;
+    background-color: #a0a9e457;
     border: none;
     border-radius: 42px;
     box-shadow: 0 4px #999;
@@ -88,10 +90,10 @@ button {
 
 
 
-button:hover {background-color: #636efe}
+button:hover {background-color: #cecfd6}
 
 button:active {
-  background-color: #636efe;
+  background-color: #cecfd6;
   box-shadow: 0 2px #b3b1b1;
   transform: translateY(4px);
 }
@@ -144,20 +146,14 @@ button {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #636efe;
+  
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px #999;
   margin-left: 60px;
 }
 
-button:hover {background-color: #636efe}
 
-button:active {
-  background-color: #636efe;
-  box-shadow: 0 2px #b3b1b1;
-  transform: translateY(4px);
-}
 
   }
    
@@ -208,19 +204,11 @@ button {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #636efe;
+ 
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px #999;
   margin-left: 60px;
-}
-
-button:hover {background-color: #636efe}
-
-button:active {
-  background-color: #636efe;
-  box-shadow: 0 2px #b3b1b1;
-  transform: translateY(4px);
 }
 
   }
