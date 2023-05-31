@@ -1,90 +1,87 @@
 *{
+  box-sizing: 0px;
   margin: 0;
-  padding: 0;
-}
-.predictionform{
-  margin-top: 5px;
-  margin-left: 558px;
-}
-
-
-h3{
-  font-size: 41px;
   
+  
+}
+.full{
+  background-color: rgb(24, 35, 93);
+  height: 620px;
+}
+
+.testt{
+  width: 1151px;
+  height: 534px;
+  background-color:white;
+  top: 54px;
+  margin-left: 175px;
+  position: relative;
+  box-shadow: 5px 5px 8px 10px #120e0e6e;
+  
+}
+.half{
+width: 44%;
+height: 100%;
+background-color: whitesmoke;
+float: left;
+}
+h3 {
+  font-size: 36px;
   font-style: initial;
-  padding-bottom: 43px;
-  color: #a0a9e4;
+  padding-bottom: 20px;
+  color: #eb2121f0;
+  margin-top: 17px;
+  margin-left: 97px;
 }
-p {
-  font-size: 22px;
-  font-style: revert;
-  
-
-}
-.left-side{
-
-  float: left;
-  padding-top: 135px;
-  padding-left: 1px;
-  /* padding-bottom: 64px; */
-  /* font-size: 58px; */
-  width: 412px;
+  p {
+      color: rgb(24, 35, 93);
+      width: 85%;
+      margin-left: 57px;
+      font-size: 20px;
+  }
+img {
+  width: 74%;
+  height: 56%;
   background-color: transparent;
-  margin-top: 52px;
-  margin-left: 48px;
+  margin-top: 66px;
+  margin-left: 51px;
 }
-
-form{
+.second-half{
   float: right;
-  background-color: rgb(54, 120, 173); /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, rgb(111, 147, 200), rgb(44, 96, 129));
-    padding-top: 19px;
-    margin-right: 379px;
-    width: 34%;
-    padding-bottom: 18px;
-    border: 0px solid white;
-    /* border-radius: 68px; */
-    box-shadow: 0px 12px 15px 0px rgba(0,0,0,0.5);
-    transition: 0.3s;
-    border-radius: 22px;
+  width: 47%;
+ background-color: transparent;
+ margin-top: 33px;
 }
 label.labels {
-  font-size: 24px;
-  padding-left: 82px;
-  
-  border-radius: 23px;
-  color: #d3d4e0f7;
+  font-size: 21px;
+
+  color: rgb(24, 35, 93);
   font-weight: bold;
   
 }
-
 input[type="number"]{
-  border: 3px solid #f8f4f4;
+  border: 3px solid #dbdeec;
   border-radius: 23px;
   box-sizing: border-box;
   width: 72%;
-  padding: 8px 11px;
-  margin: -2px -232px 4px 74px;
+  padding: 5px 9px;
+  
   outline: none;
 }
 #lastinput{
   margin-bottom: 15px;
 }
-::placeholder{
-  color: #cecfd6;
-}
 button {
-  padding: 7px 61px;
-    font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    background-color: #a0a9e457;
-    border: none;
-    border-radius: 42px;
-   
-    margin-left: 120px;
+  padding: 2px 57px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #c22020d6;
+  border: none;
+  border-radius: 47px;
+  margin-left: 91px;
 }
 
 
@@ -97,121 +94,33 @@ button:active {
   box-shadow: 0 2px #b3b1b1;
   transform: translateY(4px);
 }
-
 @media(max-width:767px){
+  .full{
+    background-color: rgb(24, 35, 93);
+    height: 620px;
+  }
   
-
-  form{
-    float: left;
-    padding-top: 4px;
-    padding-left: 4px;
-    /* padding-bottom: 64pxpx;*/
-    /* font-size: 58px; */
-    width: 348px;
-    background-color: rgb(54, 120, 173); /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, rgb(111, 147, 200), rgb(44, 96, 129));
-    margin-top: 26px;
-    margin-left: 13px;
-    border: 0px solid white;
+  .testt{
+    width: 1151px;
+    height: 534px;
+    background-color:white;
+    top: 54px;
+    margin-left: 175px;
+    position: relative;
+    box-shadow: 5px 5px 8px 10px #120e0e6e;
     
   }
-  label.labels {
-    font-size: 20px;
-    padding-left: 30px;
-    /* border-radius: 17px; */
-    color: #d1d2def7;
-    font-weight: bold;
-}
-    
-  
-  
-  input[type="number"]{
-    
-    border: 3px solid #f8f4f4;
-    border-radius: 11px;
-    box-sizing: border-box;
-    width: 79%;
-    /* margin: 4px -266px 8px 74px; */
-    outline: none;
-    margin-right: 6px;
-    margin-left: 26px;
-    /* padding-top: 7px; */
-    margin-top: 1px;
-    margin-bottom: 1px
-}
-button {
-  padding: 11px 33px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px #999;
-  margin-left: 60px;
-}
-
-
-
+  .half{
+  width: 44%;
+  height: 100%;
+  background-color: whitesmoke;
+  float: left;
   }
-   
 
-
+}
 @media(min-width:768px) and (max-width:991px){
-  form{
-    float: left;
-    padding-top: 12px;
-    padding-left: 4px;
-    font-size: 35px;
-    width: 386px;
-    background-color: rgb(54, 120, 173);
-    background-image: linear-gradient(to bottom right, rgb(111, 147, 200), rgb(44, 96, 129));
-    margin-top: 31px;
-    margin-left: 4px;
-    border: 0px solid white;
-    
-  }
-  label.labels {
-    font-size: 20px;
-    padding-left: 30px;
-    /* border-radius: 17px; */
-    color: #d1d2def7;
-    font-weight: bold;
-}
-    
-  
-  
-  input[type="number"]{
-    
-    border: 3px solid #f8f4f4;
-    border-radius: 11px;
-    box-sizing: border-box;
-    width: 79%;
-    /* margin: 4px -266px 8px 74px; */
-    outline: none;
-    margin-right: 6px;
-    margin-left: 26px;
-    /* padding-top: 7px; */
-    margin-top: 1px;
-    margin-bottom: 1px
-}
-button {
-  padding: 11px 33px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
- 
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px #999;
-  margin-left: 60px;
 }
 
-  }
-   
+
 
 
