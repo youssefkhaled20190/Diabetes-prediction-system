@@ -9,7 +9,7 @@ Auth = Blueprint("auth", __name__)
 
 @Auth.route("/signup", methods=['GET', 'POST'])
 def _signup(): 
-    
+
 
     if request.method == 'POST':
         FirstName = request.form.get('First Name')
