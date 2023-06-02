@@ -1,82 +1,185 @@
 *{
+  box-sizing: 0px;
   margin: 0;
-  padding: 0;
+  
+
+  
 }
-.predictionform{
-  margin-top: 5px;
-  margin-left: 558px;
+.full{
+  background-color: rgb(24, 35, 93);
+  height: 620px;
 }
 
-#Questions {
- 
-}
-.headline {
-  margin-bottom: 15px;
-  color: #4e63fc;
-  text-decoration: underline;
+.testt{
+  width: 1151px;
+  height: 534px;
+  background-color:white;
+  top: 54px;
+  margin-left: 175px;
+  position: relative;
+  box-shadow: 5px 5px 8px 10px #120e0e6e;
   
-font-size: 65px;
 }
-form{
-  margin-left: 50px;
+.half{
+width: 44%;
+height: 100%;
+background-color: whitesmoke;
+float: left;
+}
+h3 {
+  font-size: 36px;
+  font-style: initial;
+  padding-bottom: 20px;
+  color: #eb2121f0;
+  margin-top: 17px;
+  margin-left: 97px;
+}
+  p {
+      color: rgb(24, 35, 93);
+      width: 85%;
+      margin-left: 57px;
+      font-size: 20px;
+  }
+img {
+  width: 74%;
+  height: 56%;
+  background-color: transparent;
+  margin-top: 66px;
+  margin-left: 51px;
+}
+.second-half{
+  float: right;
+  width: 47%;
+ background-color: transparent;
+ margin-top: 33px;
+}
+label.labels {
+  font-size: 21px;
+
+  color: rgb(24, 35, 93);
+  font-weight: bold;
+  
 }
 input[type="number"]{
-  border: 4px solid #f8f4f4;
-    border-radius: 9px;
-    box-sizing: border-box;
-    width: 38%;
-    padding: 2px 6px;
-    margin: 1px 1px;
-    background-color: #dedede;
+  border: 3px solid #dbdeec;
+  border-radius: 23px;
+  box-sizing: border-box;
+  width: 72%;
+  padding: 5px 9px;
   
+  outline: none;
 }
-
-input[type=text]:focus {
-  border: 3px solid #a83535;
-}
-::placeholder{
-  color: #cecfd6;
+#lastinput{
+  margin-bottom: 15px;
 }
 button {
-  padding: 11px 33px;
+  padding: 2px 57px;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #636efe;
+  background-color: #c22020d6;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 4px #999;
-  margin-left: 60px;
+  border-radius: 47px;
+  margin-left: 91px;
 }
 
-button:hover {background-color: #636efe}
+
+
+
+button:hover {background-color: #cecfd6}
 
 button:active {
-  background-color: #636efe;
+  background-color: #cecfd6;
   box-shadow: 0 2px #b3b1b1;
   transform: translateY(4px);
 }
-#full{
- 
-    background-image: url("..//background-circle.png");
-  
-    height: 100%;
+@media(max-width:767px){
+  .full{
+  background-color: white;
     
+  }
+  
+  .testt{
+    width: 1152px;
+    height: 534px;
+    background-color: white;
+    top: 274px;
+    box-shadow: none;
+    
+  }
+  .half{
+    width: 100%;
+    height: 110%;
+    background-color: whitesmoke;
+    /* float: left; */
+    margin-left: -62px;
+    margin-bottom: 26p
+  }
+  h3 {
+    font-size: 46px;
+    font-style: initial;
+    padding-bottom: 20px;
+    color: #eb2121f0;
+    margin-top: 31px;
+    margin-left: 347px;
+  }
+    p {
+      color: rgb(24, 35, 93);
+      width: 74%;
+      margin-left: 57px;
+      font-size: 30px;
+      margin-left: 123px;
+    }
+  img {
+    width: 79%;
+    height: 61%;
+    background-color: transparent;
+    margin-top: 42px;
+    margin-left: 89px;
+  }
+  .second-half{
+        /* float: right; */
+        width: 100%;
+        background-color: whitesmoke;
+        margin-top: -4px;
+        margin-right: 61px;
+  }
+  form{
+    width: 50%;
+    margin-left: 259px;
+
+  }
+  label.labels {
+    font-size: 29px;
+  
+    
+  }
+  input[type="number"]{
+    box-sizing: border-box;
+    width: 85%;
+    height: 52px;
+    padding: 5px 9px;
+    
+  }
+  #lastinput{
+    margin-bottom: 41px;
+  }
+  button {
+    padding: 10px 61px;
+    font-size: 50px;
+    margin-left: 91px;
+    margin-bottom: 40px;
 }
-.help{
-  padding-top: 3px;
-    color:#4D63FB;
-    float: right;
-    position: relative;
-    left: -60px;
-    bottom: -60px;
-    font-family: Arial, Helvetica, sans-serif ;
-    font-style: italic;
-    font-size: 25px;
-    font-weight: bold;
+  }
+  
+  
+
+
+@media(min-width:768px) and (max-width:991px){
 }
-a {
-  color: #4D63FB;
-}
+
+
+
+

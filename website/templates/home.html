@@ -2,40 +2,104 @@
 
 {% block content%}
 <!--Start home page -->
-<div class="content">
-    <!--this div for identify -->
-   <!--<div class="textbox" style="background-color: #4e63fc;">
-    <h1 id="D">Diabetes <br> is our priority</h1>
-    <p id="ourgoal">Our goal is to reach a fully aware <br> community with the diabetes<br> and how to deal with it. </p>
-    <button> Check Now
-      <span></span>
-    </button>
+
+<!--start slider -->
+  <div class="slideshow">
+
+    <div class="mySlides">
+      
+<img src="../static/hand-holding-blood-glucose-meter-measuring-blood-sugar-background-is-stethoscope-chart-file.jpg" style="width:100%">
+<div class="text text1"><p>Our goal is to reach a fully aware <br> community with the diabetes<br> and how to deal with it. </p>
+</div>
+    </div>
+
+  <div class="mySlides"> 
+<img src="../static/hypertension-g4b98792b2_1920.jpg" style="width:100%">
+<div class="text text2">Diabetes is a common disease of our time</div>
+  </div>
+
+  <div class="mySlides">
+<img src="../static/the-level-of-sugar-in-the-blood-g16fa69580_1920.jpg" style="width:100%">
+<div class="text text3"><p>With diabetes, your body doesn't make enough insulin or can't use it as well as it should </p></div>
+    </div>
+
+    <div class="mySlides">
+<img src="../static/close-up-doctor-with-stethoscope.jpg" style="width:100%">
+<div class="text text4">There isn't a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help</div>
      </div>
-     
-   <div id="picbox">
-    <img src="static/Home-01.jpg" alt="" class="homepic" >
-   </div>
-  -->
-  <div class="child-float">
-    <div class="textbox" style="background-color: #4e63fc;">
-    <h1 id="D">Diabetes <br> is our priority</h1>
-    <p id="ourgoal">Our goal is to reach a fully aware <br> community with the diabetes<br> and how to deal with it. </p>
-    <button> Check Now
-      <span></span>
-    </button>
-     </div>
-   </div>
-   <div class="child-float">
-     <!--photo-->
-      <div id="picbox">
-    <img src="static/Home-01.jpg" alt="" class="homepic" >
+
+    <div class="mySlides">
+<img src="../static/close-up-hands-with-medical-devices.jpg" style="width:100%">
+<div class="text text5"> <p>And we can help so don't be late <br> <button class="checknow"> Check Now </button> </p></div>
+    </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+<!--End slider -->
+<!--Dots -->
+<div class="dotts" style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span> 
+</div> 
+<!--Start our gaol section  -->
+<div class="ourgoal"> 
+  <div class="ourgoal-txt"> <h3>Our Goal</h3>
+  <p> we make this website to help you to know if you have a diabetes or not using machine-learning algorithm with accuricy 90%,and put a suitable diet plan for you to save your health and live with this desise better with out any problems,and you can put your location and we will recommend all doctors around you with high rates.</p>
+  </div>
+  <div class="ourgoal-img"> <img src="../static/17807.jpg"></div>
+</div>
+<!--End our goal section -->
+<!--Start   three divs section -->
+  <div class="boxss">
+  
+  <div class="feature">
+    <div class="feature-image">
+        <img src="../static/icons8-diabetes-80.png">
+
+    </div>
+      <div class="feature-txt txt1">
+          <h2>  Blood tests</h2>
+          <p>Diabetes mellitus is a chronic disease that occurs when the pancreas does not produce enough insulin, or when the body cannot effectively use the insulin it produces.<br>There are many examinations and tests that can be used to diagnose diabetes.So, to be sure, after this test, you can go for these tests.</p>
+          <a href="https://www.cdc.gov/diabetes/basics/getting-tested.html" class="start">Know the necessary tests--></a>
       </div>
-   </div>
+      
+      </div>
+      <div class="feature">
+        <div class="feature-image">
+            <img src="../static/icons8-stethoscope-80.png">
+  
+        </div>
+        <div class="feature-txt txt2">
+            <h2> Follow up with the doctor</h2>
+            <p>One of the most important factors for preserving human health and detecting diseases immediately is continuous follow-up with a specialized doctor, to help us catch up with diseases quickly and maintain our health to the extent necessary. Our health is a blessing, so take care of it.</p>
+            <a href="#" class="start">Know the necessary tests--></a>
+        </div>
+        
+        </div>
+        <div class="feature">
+            <div class="feature-image">
+                <img src="../static/icons8-aed-80.png">
+      
+            </div>
+          <div class="feature-txt txt3">
+              <h2>Maintaining health</h2>
+              <p>Maintaining health is of great importance. When a person is in good health, he will be able to work as best he can,Health is a wealth more valuable than money and gold,Therefore, take care of your health by exercising, taking care of healthy eating, and continuing to take the necessary vitamins.Stay safe, stay healthy.</p>
+              <a href="https://www.niddk.nih.gov/health-information/diabetes/overview/managing-diabetes/4-steps" class="start">Learn more about maintaining health--></a>
+          </div>
+          
+          </div>
+  
+<!--End three divs section -->
+   
   
 </div>
-<!--the white line-->
-<div class="line" style="width: 40% ; height: 5px; background-color: white; "> 
-</div>
->
+<!--script file call -->
+<script src="{{url_for('static' ,filename='js/home.js')}}"></script>
 <!-- type ur code in this block -->
 {% endblock %}
