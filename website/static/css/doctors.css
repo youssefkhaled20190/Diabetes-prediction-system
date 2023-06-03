@@ -1,0 +1,66 @@
+.Government{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    
+}
+.selectors{
+    margin: 0%;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    color: black;
+    background-color: white;
+    
+}
+/* .content{
+    height:auto;
+    width: auto;
+    margin: 40px ;
+    padding: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-area:3/4;
+} */
+
+.card{
+    margin: 40px;
+    padding:20px;
+    height: auto;
+    width: 450px;
+    background: linear-gradient(#ADA996, #F2F2F2,#DBDBDB,#EAEAEA);
+    display: flex;
+    border-radius: 4%;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+}
+/* .card .img{
+    width: 100px;
+    height:100px;
+    border-radius: 10px;
+}
+
+.card .img .details ul{
+    list-style-type: none;
+} */
+
+.card .details{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 19mm;
+    padding-left: -2mm;
+}
+
+.card .imge img {
+    border-radius: 28px;
+    margin: 20px;
+    margin-top: 61px;
+    height: 110px;
+    width: 118px;
+}
+
+ul {
+    list-style-type: none;
+}

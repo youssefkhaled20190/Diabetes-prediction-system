@@ -1,7 +1,37 @@
 {% extends "base.html"%} {% block title%} Doctors {% endblock %}
 
 {% block content%}
-<h1> This is Doctors bage </h1>
 
-<!-- type ur code in this block -->
+<div class="Government">
+    <select class="selectors" >
+        <option value="cairo">Cairo</option>
+        <option value="giza">Giza</option>
+        <option value="Alexandria">Alexandria</option>
+        <option value="Sharm-Elshiekh">Sharm-Elshiekh</option>
+        <option value="Hurghada">Hurghada</option>
+        <option value="Asuit">Asuit</option>
+        <option value="Al gharbia">Al gharbia</option>
+        <option value="Al menofia">Al menofia</option>
+        <option value="Marsa-Matruh">Marsa-Matruh</option>
+        <option value="Al qalyubia">Al qalyubia</option>
+        <option value="El beheira">El beheira</option>
+    </select>
+</div>
+
+<div class="card">
+  <div class="imge">
+    <img src="/static/doctor.png" >
+  </div>
+<div class="details">
+    <ul>
+        <li>name : first last</li>
+        <li>rate : rate / 5</li>
+        <li>address : adress</li>
+        <li>phone number : phone number</li>
+    </ul>
+</div>
+</div>
+
 {% endblock %}
+
+
