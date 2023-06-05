@@ -46,6 +46,7 @@ height: 100vh;
 
 .site-header .logo img{
   margin-top: -29px;
+  margin-left: -30%;
   height: 136px;
   float: left;
   padding-left: 34%;
@@ -104,6 +105,14 @@ overflow: hidden;
     margin-right: 2%;
 }
 
+.logout-button:hover{
+  background-color: black;
+}
+
+.reg:hover{
+  background-color: black;
+}
+
 .site-nav a {
   color: white;
   display: flex;
@@ -118,9 +127,7 @@ overflow: hidden;
     float: right;
     cursor: pointer;
   }
-.site-nav a:hover {
-font-weight: bolder;
-}
+
 
 .site-nav .toggle_btn{
   color:#B21F1F;
@@ -237,7 +244,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     height: 68px;
     clear: both;
     margin-top:0%;
-    background-color:lightgray;
+    background-color:black;
   }
 
 

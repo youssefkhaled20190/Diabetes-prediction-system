@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -15,7 +14,7 @@
 .mySlides{
   width: 98%;
   height: 102%;
-  box-shadow: 8px 7px 10px #28457fa1;
+  box-shadow: 8px 7px 10px #1b1d2054;
    
 
 }
@@ -32,12 +31,12 @@
 
 .text {
   position: absolute;
-  top: 20px;
+  top: 100px;
   text-align: center;
   left: 478px;
-  font-weight: bold;
   
-  background: #38779087;
+  
+  background:#e1c6c687;
   color: white;
   font-size: 35px;
   width: 37%;
@@ -53,6 +52,7 @@
 }
 .text.text4 {
   top: 130px;
+  background-color: #e1c6c687;
 }
 .text.text5 {
   top: 126px;
@@ -212,6 +212,7 @@ img {
     margin-right: 14px ;
     font-size: 18px;
     color: gray;
+    line-height: 29px;
 }
 .feature-txt h2 {
   color: #eb2121f0;

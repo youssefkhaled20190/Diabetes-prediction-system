@@ -6,7 +6,9 @@
   
 }
 .full{
-  background-color: rgb(24, 35, 93);
+    background-image: url("../seamless-background-medical-items_1284-3691.webp");
+    background-position: inherit;
+    background-size: contain;
   height: 620px;
 }
 
@@ -16,6 +18,7 @@
   background-color:white;
   top: 54px;
   margin-left: 175px;
+  border-radius: 24px;
   position: relative;
   box-shadow: 5px 5px 8px 10px #120e0e6e;
   
@@ -25,6 +28,7 @@ width: 44%;
 height: 100%;
 background-color: whitesmoke;
 float: left;
+border-radius: 24px;
 }
 h3 {
   font-size: 36px;
