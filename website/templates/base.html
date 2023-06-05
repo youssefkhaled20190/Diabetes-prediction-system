@@ -3,23 +3,16 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" href="static/Logo_N-01.png" sizes="16x16 32x32">
+  <link rel="icon" href="../static/Draft Logo-03.png" sizes=" 32x32">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" type="text/css" href="{{url_for('static' ,filename='css/main.css')}}" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="https://kit.fontawesome.com/51a791caa3.js" crossorigin="anonymous"></script>
-
-
-
-  <!-- links for flash msg -->
-
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    crossorigin="anonymous" /> -->
 
   {% if custom_css%}
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/' +custom_css+'.css')}}">
@@ -30,36 +23,63 @@
 </head>
 
 <body>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      {% if category == 'error' %}
+        <div id="flash" class="alert alert-danger alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close flash-close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% else %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {{ message }}
+          <button type="button" class="close flash-close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endif %}
+    {% endfor %}
+    <script>
+      document.querySelectorAll('.flash-close').forEach(function (button) {
+        button.addEventListener('click', function () {
+          this.parentElement.remove();
+        });
+      });
+    </script>
+  {% endif %}
+{% endwith %}
+
+
   <div class="container">
+    
   <header class=" child site-header">
     <div class="logo">
-      <img src="static/Logo-01.png">
+      <img src="../static/1000210173-removebg-preview.png" alt="logo" >
     </div>    
     <nav class=" child site-nav">
-      <ul>
-
-        <li><a href="/" >Home</a></li>
+      
+<ul>
+        <li><a href="/" class="home" style="color: black;">Home</a></li>
         
 
         {% if user.is_authenticated %}
-        <li><a href="/form">Check Diabetes</a></li>
-        <li><a href="/doctors">Doctors</a></li>
-        <li><a href="/dietandprecautions">Diet</a></li>
-        <li><a href="/logout">Logout</a></li>
-        {% else %}
-        <li><a href="/signup">Sign Up</a></li>
-        <li><a href="/login">Login</a></li>
-        {% endif %}
+        <li><a href="/form" style="color: black;">Check Diabetes</a></li>
+        <li><a href="/doctors" style="color: black;">Doctors</a></li>
+        <li><a href="/dietandprecautions" style="color: black;">Diet</a></li>
       </ul>
 
-      <div class="icons">
-        <i class="fa-brands fa-facebook fa-xl" style="color: #4d63fb;"></i>
-  
-        <i class="fa-brands fa-twitter fa-xl" style="color: #4d63fb;"></i>
-  
-        <i class="fa-brands fa-instagram fa-xl" style="color: #4d63fb;"></i>
-      </div>
-  
+        <button class="logout-button"><a href="/logout">Logout</a></button>
+      
+        {% else %}
+        <button class="reg" style="margin-right: -228%;"><a href="/signup" style="text-align: center;">SignUp</a></button>
+        <button class="reg" style="margin-right: -261%;"><a href="/login"  style="text-align: center;">Login</a></button>
+        {% endif %}
+      
+      
       <div class="toggle_btn">
         <i class="fa-solid fa-bars fa-sm"></i>
       </div>
@@ -85,34 +105,10 @@
             <li><a href="/login">Login</a></li>
             {% endif %}
           </ul>
-    
-          <div class="icons_d">
-            <i class="fa-brands fa-facebook fa-xl" style="color: #4d63fb; padding-left: 66px;"></i>
-      
-            <i class="fa-brands fa-twitter fa-xl" style="color: #4d63fb;padding-left: 32px;"></i>
-      
-            <i class="fa-brands fa-instagram fa-xl" style="color: #4d63fb;"></i>
-          </div>
         </div>
     </nav>
   </header>
-  {% with messages = get_flashed_messages(with_categories=true) %} {% if
-  messages %} {% for category, message in messages %} {% if category ==
-  'error' %}
-  <div class="alert alert-danger alter-dismissable fade show" role="alert">
-    {{ message }}
-    <button type="button" class="close" data-dismiss="alert">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  {% else %}
-  <div class="alert alert-success alter-dismissable fade show" role="alert">
-    {{ message }}
-    <button type="button" class="close" data-dismiss="alert">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-  {% endif %} {% endfor %} {% endif %} {% endwith %}
+     
 
 
 
@@ -123,28 +119,22 @@
 
   </main>
 
-  <!--
-  <footer class=" child site-footer">
-    <img src="static/1Artboard 1.png">
-    <div class="help">
-      <i class="fa-sharp fa-solid fa-circle-notch fa-xl " style="color: #4d63fb;"></i>
-      <u>HELP</u>
-          </div>
+
+
+
+  <button id="scroll-up-btn" title="Back to top" style="background-color:#B21F1F">
+    <i class="fa fa-arrow-up" style="color: white;"></i>
+  </button>
+
 </footer>
--->
+
+  
+  <footer class=" child site-footer">
+<p style="text-align: center;margin-top: 2%;">Copyright 2023 All rights reserved by Diabetes Prediction </p>
+</footer>
+
 </div>
 <script src="{{url_for('static' ,filename='js/nav.js')}}"></script>
-
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script> -->
-
 </body>
 
 </html>

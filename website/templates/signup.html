@@ -4,36 +4,47 @@
 {% block content %}
 <!-- start signup-->
 <div class="signup-container">
-  <div class="signUp"><u>Sign Up</u></div><br>
-  <form method="POST">
-    <input type="text" id="firstname" name="First Name" placeholder="First name" required><br>
-    <br>
-    <input type="text" id="lastname" name="Last Name" placeholder="Last name" required><br>
-    <br>
-    <input type="email" id="email" name="email" placeholder="Enter Email" required><br>
-    <br>
-    <input type="password" id="password1" name="password1" placeholder="Enter password" required><br>
-    <br>
-    <input type="password" id="password2" name="password2" placeholder="Repeat password" required><br>
-    <br>
+  <div class="blob">
 
-    <input type="text" id="city" name="City" placeholder="City" required><br>
-    <br>
-    <input type="text" id="country" name="Country" placeholder="Country" required><br>
-    <br>
-    <input type="text" id="phonenumber" name="Phone Number" placeholder="Phone Number" required><br>
-    <br>
-    <label for="gender">Gender:</label>
-    <select class="custom-select" name="gender">
+    <img class="signup-blob" src="../static/Untitled-3-01-1.png" alt="blob" style="width: 664.5px;
+    height: 511.5px;
+    border-radius: 18px;">
+      </div>
+  <p class="welcome-para">Welcome!</p>
+  <form method="POST" style="float: right;margin-right: 12%;">
+    <input type="text" id="firstname" name="First Name" placeholder="First name" required style="margin-left: -75%;
+    margin-bottom: 2%;"><br>
+    
+    <input type="text" id="lastname" name="Last Name" placeholder="Last name" required ><br>
+
+    <input type="email" id="email" name="email" placeholder="Enter Email" required style="margin-left: -75%;
+    margin-bottom: 2%;"><br>
+    
+    <input type="password" id="password1" name="password1" placeholder="Enter password" required ><br>
+
+    <input type="password" id="password2" name="password2" placeholder="Repeat password" required style="margin-left: -75%;
+    margin-bottom: 2%;"><br>
+
+    <input type="text" id="city" name="City" placeholder="City" required ><br>
+  
+    <input type="text" id="country" name="Country" placeholder="Country" required style="margin-left: -75%;
+    margin-bottom: 2%;"><br>
+    <input type="text" id="phonenumber" name="Phone Number" placeholder="Phone Number" required ><br>
+<div class="selectors " style="width: 123px;
+height: 52px;
+margin-left: 9%;">
+  <label for="gender">Gender:</label>
+    <select class="custom-select" name="gender" style="text-align: center;">
       <option value="male">Male</option>
       <option value="female">Female</option>
     </select>
+</div>
+<br>
+    <input type="submit" class="signin" value="Create Account" style="margin-left: -1%; ">
     <br>
     <br>
-    <input type="submit" class="signin" value="Create Account">
-    <br>
-    <br>
-    <p>Already a member ? <a href="login.html">Login</a> </p>
+    <p style="margin-top: -2%;
+    margin-left: 0%;">Already a member ? <a href="login.html">Login</a> </p>
   </form>
 </div>
 

@@ -1,30 +1,49 @@
 /* start form */
-.containerLogin .Login u{
-  color:#4D63FB;
-  font-family: Arial, Helvetica, sans-serif ;
-  font-style: italic;
-  font-size: 65px;
-  font-weight: bold;
+
+body{
+  background-image: url("../seamless-background-medical-items_1284-3691.webp");
+  background-position: inherit;
+
 }
 .containerLogin{
-  max-width: 500px;
-  margin: 50px auto;
-  width: 50%;
-  height: 50%;
-  padding: 10px 10px 20px 10px;
-   text-align: center;
+max-width: 661px;
+margin: 50px auto;
+height: 445px;
+border-radius: 24px;
+padding: 10px 10px 20px 10px;
+background-color: white;
+text-align: center;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
-main{
+.login-icon{
+  width: 66px;
+  height: 54px;
+  margin-top: 0%;
+  margin-bottom: -1%;
+  padding-top: 2%;
+  margin-left: 71%;
+}
 
-  background-image:url('..//background-circle.png');
-  background-position: center;
-  background-size: cover;
+.blob {
+  width: 330.5px;
+  height: 444.5px;
+  margin: 0;
+  margin-left: -10px;
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  border-radius: 24px;
+
+}
+
+
+main{
 
 }
 
 ::placeholder{
-  color:#4d63fb;
+  color:grey;
   font-family: Arial, Helvetica, sans-serif ;
 
 }
@@ -40,36 +59,49 @@ input[type="text"] {
   height:44px;
     font-size:14pt;
   }
-
+form{
+  float:right;
+  margin-top: 8%;
+}
 input[type="submit"] {
-  background-color:#4D63FB;
+  text-align: center;
+background-color: #B21F1F;
   color: white;
   font-family: Arial, Helvetica, sans-serif ;
   font-style: italic;
   font-size: 20px;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 14px;
+  width: 210px;
   cursor: pointer;
+  
 }
 
 
 /* Mobile styles */
 @media (max-width: 992px) {
-  main{
-    background-image:url('..//background-circle.png');
-    background-size:inherit;
-  }
   .containerLogin {
     padding: 20px;
-    height:852px
+    height: 445px;
+    margin-top: 118px;
   }
-  .containerLogin.Login u{
-    width: 100%;
-  }
+  .login-blob{
+    width: 664.5px;
+    height: 646.5px;
+    border-radius: 18px;
+    padding-left: -14%;
+    padding-right: -2%;
+    margin-left: -3%;
+    padding-top: -16%;
+    margin-top: -3%;
+}
   .Login {
     font-size: 24px;
     padding-top: 10%;
+  }
+  .login-icon{
+    margin-bottom: 5%;
   }
   
   form {
