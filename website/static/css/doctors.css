@@ -1,3 +1,4 @@
+
 .Government{
     text-align: center;
     width: 50%;
@@ -5,14 +6,32 @@
     padding: 5%;
     
 }
+.my-label{
+    display: block;
+    text-align: center;
+    margin-right: -388px;
+    margin-bottom: 11px;
+    font-size: large;
+    font-weight: bold;
+}
 .selectors{
-    margin: 0%;
+    margin-left: 200px;
     width: 100%;
     padding: 3%;
     text-align: center;
     color: black;
     background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
     
+}
+
+.selectors option {
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
 }
 /* .content{
     height:auto;
@@ -25,7 +44,11 @@
     column-gap: 20px;
     grid-area:3/4;
 } */
-
+.content{
+    display: inline-flex;
+    margin-right: -37px;
+    margin-left: 171px;  
+}
 .card{
     margin: 40px;
     padding:20px;
@@ -34,8 +57,9 @@
     background: linear-gradient(#ADA996, #F2F2F2,#DBDBDB,#EAEAEA);
     display: flex;
     border-radius: 4%;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
+
 /* .card .img{
     width: 100px;
     height:100px;
@@ -54,13 +78,35 @@
 }
 
 .card .imge img {
-    border-radius: 28px;
-    margin: 20px;
-    margin-top: 61px;
-    height: 110px;
-    width: 118px;
+    border-radius: 54px;
+    margin: 26px;
+    margin-top: 66px;
+    height: 123px;
+    width: 167px;
 }
 
 ul {
     list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+li {
+    margin-top: 5px;
+}
+
+.form{
+    display: flex;
+}
+.form input {
+    height: 56px;
+    width: 161px;
+    margin-right: 230px;
+    margin-top: 109px;
+    padding: 15px;
+    color: white;
+    background: linear-gradient(#333333 , #dd1818);
+    font-weight: bold;
+    border: none;
+    
 }

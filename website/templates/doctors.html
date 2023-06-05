@@ -2,35 +2,43 @@
 
 {% block content%}
 
-<div class="Government">
-    <select class="selectors" >
+<form method="POST" class="form">
+  <div class="Government">
+    <label for="selector" class="my-label">Select Government</label>
+    <select class="selectors"  id="selector" name="selector">
+        <option value="all">all</option>
         <option value="cairo">Cairo</option>
         <option value="giza">Giza</option>
         <option value="Alexandria">Alexandria</option>
-        <option value="Sharm-Elshiekh">Sharm-Elshiekh</option>
         <option value="Hurghada">Hurghada</option>
         <option value="Asuit">Asuit</option>
-        <option value="Al gharbia">Al gharbia</option>
-        <option value="Al menofia">Al menofia</option>
-        <option value="Marsa-Matruh">Marsa-Matruh</option>
-        <option value="Al qalyubia">Al qalyubia</option>
-        <option value="El beheira">El beheira</option>
+        <option value="Algharbia">Al gharbia</option>
+        <option value="almonofia">Al menofia</option>
+        <option value="Alqulyuobia">Al qalyubia</option>
+        <option value="albeheria">El beheira</option>
     </select>
 </div>
+<input type="submit" value="SHOW">
+</form>
 
-<div class="card">
-  <div class="imge">
-    <img src="/static/doctor.png" >
+{% for doctors in data %}
+<div class="content">
+  <div class="card">
+    <div class="imge">
+      <img src="/static/doctor2.png" >
+    </div>
+  <div class="details">
+      <ul>
+          <li><span><img src="/static/name.png" height="15" width="15"></span> {{doctors.first_name}} {{doctors.last_name}}</li>
+          <li><span><img src="/static/rate.png" height="15" width="15"></span> {{doctors.rate}}/ 5</li>
+          <li><span><img src="/static/address.png" height="15" width="15"> {{doctors.address}}</li>
+          <li><span><img src="/static/phone.png" height="15" width="15">{{doctors.phoneNumber}}</li>
+      </ul>
   </div>
-<div class="details">
-    <ul>
-        <li>name : first last</li>
-        <li>rate : rate / 5</li>
-        <li>address : adress</li>
-        <li>phone number : phone number</li>
-    </ul>
+  </div>
 </div>
-</div>
+
+{% endfor %}
 
 {% endblock %}
 
