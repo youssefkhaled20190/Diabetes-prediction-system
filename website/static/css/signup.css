@@ -3,6 +3,8 @@
 body{
   background-image: url("../seamless-background-medical-items_1284-3691.webp");
   background-position: inherit;
+  background-size: contain;
+
 
 }
 

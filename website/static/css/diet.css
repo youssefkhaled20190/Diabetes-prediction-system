@@ -1,29 +1,23 @@
+
+body{
+  background-image: url("../1702.m10.i304.n006.F.c06.274170314\ Healthy\ fruit\ hand\ drawn\ seamless\ vector\ texture.jpg");
+  background-size: contain;
+}
+
 .choices{
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 6%;
   padding-top: 6%;
 }
-/* title*/
-.title{
-    text-align: center;
-    
-}
-.title {
-  color: #4D63FB;
-  font-family: 'Lexend Deca', sans-serif; 
-  font-style: italic;
-  font-weight: bold;
-  font-size: 45px;
 
-}
 .child{
 flex-shrink: 1;
 
 }
-/* end title*/
+
 /* first choice*/
 
 .breakfast{
@@ -45,7 +39,7 @@ margin-right: 0;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
   border-radius: 25px;
-  background-color: #4D63FB;
+  background-color:#B21F1F;
   padding: 20px; 
   width: 750px;
   height: 85px;  
@@ -57,7 +51,7 @@ margin-right: 0;
   touch-action: manipulation;
 }
 #btn:hover {
-  background-color: #1C84FF;
+  background-color:black;
 }
 .bf-card {
   position: fixed;
@@ -175,7 +169,7 @@ margin-right: 306px;
   margin-left: 3%;
   margin-top: 8%;
   border-radius: 25px;
-  background-color: #4D63FB;
+  background-color:#B21F1F;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
@@ -286,7 +280,7 @@ margin-top: -50px;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
   border-radius: 25px;
-  background-color: #4D63FB;
+  background-color: #B21F1F;
   padding: 20px; 
   width: 750px;
   height: 85px;  
@@ -386,7 +380,7 @@ margin-right: 306px;
   margin-left: 3%;
   margin-top: 5%;
   border-radius: 25px;
-  background-color: #4D63FB;
+  background-color:#B21F1F;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
