@@ -1,9 +1,3 @@
-body{
-
-  background-image:url('..//background-circle.png');
-  background-repeat: repeat;
-  object-fit: cover;
-}
 .choices{
   display:flex;
   flex-direction: column;
@@ -17,7 +11,7 @@ body{
     text-align: center;
     
 }
-.title u{
+.title {
   color: #4D63FB;
   font-family: 'Lexend Deca', sans-serif; 
   font-style: italic;
