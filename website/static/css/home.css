@@ -36,8 +36,7 @@
   text-align: center;
   left: 478px;
   font-weight: bold;
-  
-  background: #38779087;
+  background: #ecb3b387;
   color: white;
   font-size: 35px;
   width: 37%;
@@ -101,20 +100,6 @@
 .active, .dot:hover {
   background-color: #717171;
 }
-.checknow{
-  
-  padding: 7px 44px;
-  font-size: 27px;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color:#B21F1F;
-  border: none;
-  border-radius: 45px;
-  margin-left: 52px;
-  cursor: pointer;
-}
-
 
 
 
@@ -139,7 +124,7 @@ transform: translateY(4px);
   float: left;
   width: 31%;
   line-height: 31px;
-  margin-left: 103px
+  margin-left: 103px;
 }
 
 .ourgoal h3{
@@ -199,6 +184,7 @@ img {
   width: 124px;
   height: 131px;
 }
+
 .feature-txt {
       /* float: left; */
     /* width: 31%; */
@@ -207,11 +193,9 @@ img {
     margin-right: 14px ;
     font-size: 18px;
     color: gray;
-<<<<<<< Updated upstream
     line-height: 29px;
     text-align: center;
-=======
->>>>>>> Stashed changes
+
 }
 .feature-txt h2 {
   color:#B21F1F;
