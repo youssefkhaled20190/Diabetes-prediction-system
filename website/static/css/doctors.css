@@ -108,7 +108,11 @@ li {
     margin-top: 109px;
     padding: 15px;
     color: white;
+<<<<<<< Updated upstream
     background-color:#B21F1F;
+=======
+    background:  #B21F1F;
+>>>>>>> Stashed changes
     font-weight: bold;
     border-radius: 7px;
     border: none;
