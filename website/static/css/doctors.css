@@ -1,4 +1,6 @@
 
+
+
 .Government{
     text-align: center;
     width: 50%;
@@ -25,6 +27,7 @@
     border-radius: 5px;
     font-size: 20px;
     font-weight: 700;
+    cursor: pointer;
     
 }
 
@@ -85,7 +88,7 @@
     width: 167px;
 }
 
-ul {
+.list-doctors {
     list-style-type: none;
     font-size: 20px;
     font-weight: bold;
@@ -105,8 +108,21 @@ li {
     margin-top: 109px;
     padding: 15px;
     color: white;
-    background: linear-gradient(#333333 , #dd1818);
+    background-color:#B21F1F;
     font-weight: bold;
+    border-radius: 7px;
     border: none;
+    cursor:pointer;
     
+}
+input:hover{
+background-color: black;
+}
+
+
+@media(max-width: 992px){
+  .form input{
+    margin-left: 26%;
+    margin-right: 63px;
+  }
 }

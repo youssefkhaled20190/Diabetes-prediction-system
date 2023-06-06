@@ -6,7 +6,7 @@
   
 }
 .full{
-    background-image: url("../seamless-background-medical-items_1284-3691.webp");
+    background-image: url("../image\(1\).jpg");
     background-position: inherit;
     background-size: contain;
   height: 620px;
@@ -39,7 +39,7 @@ h3 {
   margin-left: 97px;
 }
   p {
-      color: rgb(24, 35, 93);
+      color:black;
       width: 85%;
       margin-left: 57px;
       font-size: 20px;
@@ -60,7 +60,7 @@ img {
 label.labels {
   font-size: 21px;
 
-  color: rgb(24, 35, 93);
+  color: black;
   font-weight: bold;
   
 }
@@ -92,7 +92,7 @@ button {
 
 
 
-button:hover {background-color: #cecfd6}
+button:hover {background-color:black;}
 
 button:active {
   background-color: #cecfd6;

@@ -118,10 +118,9 @@
 
 
 
-button:hover {background-color: lightblue}
+button:hover {background-color:black}
 
 button:active {
-background-color: lightblue;
 box-shadow: 0 2px #b3b1b1;
 transform: translateY(4px);
 }
@@ -200,10 +199,6 @@ img {
   width: 124px;
   height: 131px;
 }
-.image2{
-  
-}
-
 .feature-txt {
       /* float: left; */
     /* width: 31%; */
@@ -213,16 +208,17 @@ img {
     font-size: 18px;
     color: gray;
     line-height: 29px;
+    text-align: center;
 }
 .feature-txt h2 {
-  color: #eb2121f0;
+  color:#B21F1F;
 }
 .start{
   text-decoration: none;
   color: #636efe;
 font-weight: bold;
 }
-@media(min-width:768px) and (max-width:991px){
+@media(min-width:768px) and (max-width:992px){
   .slideshow {
     width: 141%;
     height: 383px;

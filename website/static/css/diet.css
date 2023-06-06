@@ -60,7 +60,7 @@ margin-right: 0;
   transform: translate(-50%, -50%);
   width: 500px;
   max-width: 90%;
-background-color: beige;
+background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -96,13 +96,13 @@ background-color: beige;
   font-family: "Kalam", cursive;
   font-weight: normal;
   font-size: 2rem;
-  color:#5f5f89;
+  color:#B21F1F;
   text-align: center;
 }
 #closeButton ,#DcloseButton ,#LcloseButton,#PrecloseButton{
   appearance: button;
   backface-visibility: hidden;
-  background-color: #405cf5;
+background-color: #B21F1F;
   border-radius: 6px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -134,13 +134,13 @@ background-color: beige;
 .card-title2{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color: #B21F1F;
 }
 
 .card-title3{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color: #B21F1F;
 
 }
 .image-one {
@@ -196,7 +196,7 @@ margin-right: 306px;
   transform: translate(-50%, -50%);
   width: 500px;
   max-width: 90%;
-background-color: beige;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -212,7 +212,7 @@ background-color: beige;
   font-family: "Kalam", cursive;
   font-weight: normal;
   font-size: 2rem;
-  color:#5f5f89;
+  color:#B21F1F;
   text-align: center;
 }
 .lunch-text{
@@ -222,12 +222,12 @@ background-color: beige;
 .lunch-title2{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color: #B21F1F;
 }
 .lunch-title3{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color:#B21F1F;
 }
 
 .Loverlay {
@@ -303,7 +303,7 @@ margin-top: -50px;
   transform: translate(-50%, -50%);
   width: 500px;
   max-width: 90%;
-background-color: beige;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -317,7 +317,7 @@ background-color: beige;
   font-family: "Kalam", cursive;
   font-weight: normal;
   font-size: 2rem;
-  color:#5f5f89;
+  color:#B21F1F;
   text-align: center;
 }
 .dinner-text{
@@ -327,12 +327,12 @@ background-color: beige;
 .dinner-title2{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color:#B21F1F;
 }
 .dinner-title3{
   font-family: "Kalam", cursive;
   font-size: 25px;
-  color: #5e5e89;
+  color:#B21F1F;
 }
 
 .Doverlay {
@@ -406,7 +406,7 @@ margin-right: 306px;
   transform: translate(-50%, -50%);
   width: 500px;
   max-width: 90%;
-background-color: beige;
+  background-color: white;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -423,7 +423,7 @@ background-color: beige;
   font-family: "Kalam", cursive;
   font-weight: normal;
   font-size: 2rem;
-  color:#5f5f89;
+  color:#B21F1F;
   text-align: center;
 }
 .pre-text{
@@ -461,4 +461,31 @@ margin-top: 0%;
   border-radius: 100%;
 }
 /*end forth choice*/
-/*
+
+
+@media(max-width: 992px){
+
+  .choices{
+    margin-top: 23%;
+  }
+  #btn{
+    width: 630px;
+    margin-left: 11%;
+  }
+
+  #dinner-btn{
+    width: 630px;
+    margin-left: 11%;
+  }
+  #lunch-btn{
+    margin-right: -123px;
+margin-left: 47%;
+width: 630px;
+  }
+
+  #pre-btn{
+    margin-right: -123px;
+    margin-left: 47%;
+    width: 630px;
+  }
+}
