@@ -1,6 +1,6 @@
 Body{
-    /* background-image:url('..//background-circle.png') */
-    background: linear-gradient(#333333 , #dd1818);
+     background-image:url('..//image\(1\).jpg') 
+    /* background: linear-gradient(#333333 , #dd1818); */
 }
 .card{
     
@@ -33,17 +33,21 @@ Body{
     text-align: center;
     padding: 10px;
 }
-p{
+/* p{
     margin: 10px;
     font-size: 30px;
-}
+} */
 .card .content .neg{
     color: rgb(218, 18, 18);
     font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
 }
 .card .content .pos{
     color: rgb(24, 213, 24);
     font-weight: bold;
+    margin: 10px;
+    font-size: 30px;
 }
  
 
