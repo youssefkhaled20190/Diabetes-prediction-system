@@ -138,6 +138,9 @@ overflow: hidden;
   margin-right: 31px;
   margin-left: 381%;
   display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .dropdown_menu{
@@ -177,12 +180,15 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
   .site-nav .toggle_btn{
     display: block;
-    margin-left: 71%;
+    margin-left: 43%;
   }
   .dropdown_menu{
     visibility: visible;
   }
 
+  .dropdown_menu ul{
+    margin-right: 181px;
+  }
   .site-header .logo img{
     height: 172px;
     float: left;
@@ -205,6 +211,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     .dropdown_menu{
       visibility: visible;
     }
+    
   
     .site-header .logo img{
       height: 172px;

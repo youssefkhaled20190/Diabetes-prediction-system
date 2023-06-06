@@ -110,7 +110,7 @@ input[type="submit"] {
   margin-right: -15%;
 }
 
-/* Mobile styles */
+/* tablet styles */
 @media (max-width: 992px) {
 
   .signup-container {
