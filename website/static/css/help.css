@@ -76,3 +76,15 @@
 .bmi h1 {
     margin: 10px;
 }
+
+
+
+
+@media (max-width: 992px) {
+  .parent {
+    margin-top: 10%;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+}
