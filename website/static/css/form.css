@@ -220,6 +220,7 @@ button:active {
     padding-bottom: 20px;
     color: #eb2121f0;
     margin-top: 20px;
+    margin-left: 35px;
   }
   
   p {
@@ -278,6 +279,9 @@ button:active {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 13px;
+  }
+  #lastinput {
+    margin-bottom: 19px;
   }
 
   

@@ -204,6 +204,8 @@ img {
   color: #636efe;
 font-weight: bold;
 }
+
+/*
 @media(min-width:768px) and (max-width:992px){
   .slideshow {
     width: 141%;
@@ -318,7 +320,6 @@ font-weight: bold;
 .feature-txt {
   float: left;
   width: 101%;
-  /* margin-top: 27px; */
   margin-left: 113px;
   margin-right: 37px;
   font-size: 22px;
@@ -327,7 +328,6 @@ font-weight: bold;
 .feature-image {
   width: 259px;
   float: right;
-  /* height: 82px; */
   margin-top: 25px;
 }
 .feature-image img {
@@ -335,6 +335,112 @@ font-weight: bold;
   height: 119px;
 }
 }
+*/
+
+@media (max-width: 992px) {
+  .slideshow {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    margin-top: 103px;
+  }
+  
+  .mySlides{
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+  
+  .text {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    font-size: 24px;
+  }
+  
+  .prev, .next {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .text.text5 {
+    font-size: 32px;
+  }
+
+  .ourgoal {
+    height: 337px;
+    margin-left: 47px;
+  }
+  
+  .ourgoal-txt {
+    float: left;
+    width: 31%;
+    margin-left: 103px;
+    text-align: left;
+  }
+  .ourgoal-txt h3{
+    font-size: 34px;
+    margin-top: -21px;
+  }
+  .ourgoal-txt p{
+    font-size: 13px;
+  }
+  
+  .ourgoal-img {
+    float: right;
+    width: 38%;
+    margin-top: -14px;
+    text-align: right;
+  }
+  
+  .ourgoal-img img {
+    max-width: none;
+    width: 325px;
+    height: 270px;
+    margin-right: 12px;
+  }
+  .boxss {
+    height: 622px;
+    margin-left: 47px;
+  }
+  
+  .feature {
+    width: 30%;
+    margin-left: 0;
+  }
+  
+  .feature:nth-child(2),
+  .feature:nth-child(3) {
+    margin-top: 50px;
+  }
+  
+  .feature-image{
+    width: 322px;
+    height: auto;
+    margin: 0;
+    margin-right: -51px;
+    float: right;
+  }
+  .feature-image img{
+    width: 113px;
+height: 101px;
+  }
+  
+  .feature-txt {
+    margin-top: 0;
+    margin-left: 38px;
+    margin-right: 14px;
+    text-align: left;
+  }
+
+  .feature-txt h2{
+    font-size: 30px;
+  }
+  .feature-txt p{
+    font-size: 17px;
+  }
+}
+
 @media(max-width:767px){
   .slideshow {
     width: 141%;
