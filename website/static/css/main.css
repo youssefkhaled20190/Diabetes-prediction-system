@@ -128,9 +128,6 @@ overflow: hidden;
     float: right;
     cursor: pointer;
   }
-  
-
-
 .site-nav .toggle_btn{
   color:#B21F1F;
   font-size: 1.5rem;
@@ -173,6 +170,7 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
+
 #scroll-up-btn {
   display: none;
   position: fixed;
@@ -206,9 +204,10 @@ transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   background-color:lightgray;
 }
 
-.para-footer{
+#para-footer{
   text-align: center;
   margin-top: 2%;
+  font-size: 16px;
    color:black;
 }
 
